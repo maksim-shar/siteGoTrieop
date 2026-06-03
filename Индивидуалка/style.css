@@ -1,0 +1,1034 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+   font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+  -webkit-tap-highlight-color: transparent;
+  
+}
+
+html{
+    scroll-behavior: smooth;
+    background: #F0F0F0;
+   
+    
+}
+
+.form__item:has(.form__field:user-invalid)::after{
+    content: "Обязательное поле для заполнения";
+    color: rgb(255, 0, 0);
+    font-size: 10px;
+}
+
+
+
+
+ button:focus, input:focus, textarea:focus {
+    outline: 2px solid #FF7B4E;
+    
+}
+
+.section2, .section3, .section4, .section5 {
+    position: relative;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.text1 h1, .text2 h1  {
+    color: #111;
+}
+
+.section5 {
+    background-color: #ffffff; 
+}
+
+.header {
+    justify-content: center; 
+    display: flex;
+    background-color: #F0F0F0;
+    padding: 10px 100px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+
+    
+    
+}
+
+.logo img {           
+    padding-top: 8px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;  
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;          
+}
+
+.menu {
+    padding-left: 237px;
+    display: flex;           
+    align-items: center;     
+    gap: 64px;  
+    justify-content: center; 
+    font-size: 15px;
+
+}
+
+.menu li {
+    display: inline-block;
+}
+
+.button-group {
+    padding-left: 164px;
+    display: flex;
+    gap: 19px;
+}
+
+
+
+.menu a{
+    color: black;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+    
+}
+
+.menu a:hover{
+    color: #FF7B4E;
+    text-decoration: none;
+    transition-duration: 0.5s;
+    
+    
+}
+
+
+.button {
+    padding-left: 164px;
+    display: flex;           
+    align-items: center;     
+    gap: 19px;  
+    cursor: pointer;
+
+}
+
+.login {
+    background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+    color: rgb(255, 255, 255);
+    padding: 13px 40px 13px 40px;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;   
+    font-size: 15px;
+    transition-duration: 0.5s;
+}
+
+.login:hover {
+    background: black;
+    transition-duration: 0.5s;
+    
+}
+
+.login:active{
+    transform: scale(0.99);
+}
+
+.registration {
+    background: #F0F0F0;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 15px;
+    transition-duration: 0.5s;
+
+}
+
+.registration:active{
+    transform: scale(0.98);
+}
+
+.registration:hover {
+    border: none;
+    font-size: 15px;
+    color: #FF7B4E;
+
+}
+
+
+
+.container1{
+    min-height: 800px;    
+    background-color:#F0F0F0 ;
+    height: auto;
+    background-image: url(img/picture\ main.png);
+        
+        
+}
+
+   
+
+
+.elements h1{
+    font-size: 48px;
+    color: #F0F0F0;
+    padding-top: 15px;
+    
+    
+}
+
+.title{
+    padding-left: 100px;
+    padding-top: 169px;
+    
+    
+    
+}
+
+.title1{
+    opacity: 60%;
+    padding-left: 100px;
+    font-size: 25px;
+    color: #F0F0F0;
+    padding-top: 80px;
+    
+    
+}
+
+@scope (.buttons){
+    .button{
+        font-size: 25px;
+        padding: 32px 27px 32px 27px;
+        color: #F0F0F0;
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+        border: none;
+        border-radius: 27px;
+        transition-duration: 0.2s;
+        
+    }
+    
+
+    .button:hover{
+        background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+        transition-duration: 0.2s;
+    }
+
+    .button:active{
+        transform: scale(0.98);
+    }
+}
+
+.buttons{
+    padding-left: 100px;
+    padding-top: 70px;
+}
+
+.container2{
+    min-height: 800px;
+    height: auto;
+    background-color: #F0F0F0 ;
+    
+}
+
+.cards{
+    display: flex;
+    justify-content: center;
+    gap: 91px;
+    padding-top: 118px;
+    
+    
+    
+}
+
+
+
+@scope (.container2){
+    .button1{
+        display: flex;
+        justify-content: center;
+        color: #F0F0F0;
+        padding-top: 83px;
+        
+        }
+   
+    .button{
+        display: flex;
+        justify-content: center;
+        transition-duration: 0.2s;
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+        border: none;
+        padding: 22px 44px 22px 44px;
+        border-radius: 27px;
+        color: #F0F0F0;
+        font-size: 24px;
+        
+    }
+
+    .button:hover{
+       background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+       transition-duration: 0.2s;
+    }
+
+    .button:active{
+        transform: scale(0.98);
+    }
+
+  
+
+    .card1, .card2, .card3{
+        position: relative;
+        display: flex;
+        justify-content: center;
+        background: #F0F0F0;
+        border-radius: 35px;
+        height: 402px;
+        width: 335px;
+        flex-direction: column;
+        
+        
+       
+        
+        
+    }
+
+
+    .card1 img, .card2 img, .card3 img{
+        width: 100%;
+        height: auto;
+        display: block;
+    }
+
+    .card1 h1, .card2 h1, .card3 h1 {
+        position: absolute;
+        font-size: 30px;
+        text-align: center;
+        padding-top: 320px;
+        color: #ffffff;
+        width: 100%;
+        
+    }
+}
+
+.container3{
+    display: flex;
+    justify-content: center;
+    min-height: 800px;
+    height: auto;
+    background-color: #F0F0F0 ;
+    gap: 12px;
+}
+
+.picture{
+    position: relative;
+    padding-top: 112px;
+    
+    
+    
+
+}
+
+.container3 h2 {
+    color: #ffffff;
+    position: static;  
+    text-align: center;
+    padding-left: 0;
+    font-size: 93px;
+    margin-top: -150px;
+    
+}
+
+.list-button{
+padding-top: 180px;
+
+
+}
+
+
+
+@scope (.container3){
+    .button1{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+   font-size: 28px; 
+   transition-duration: 0.5s;
+   padding: 17px 60px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+    
+
+    .button2{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+   font-size: 28px; 
+   transition-duration: 0.5s;
+   padding: 17px 227px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+   
+    }
+
+    .button3{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+   font-size: 28px; 
+   transition-duration: 0.5s;
+   padding: 17px 132px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button4{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+   font-size: 28px; 
+   transition-duration: 0.5s;
+   padding: 17px 81px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button5{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 312px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+
+    .button1:hover{
+        background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 60px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button2:hover{
+       background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 227px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button3:hover{
+       background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 132px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button4:hover{
+       background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 81px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button5:hover{
+        background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+   font-size: 28px; 
+   transition-duration: 0.2s;
+   padding: 17px 312px 17px 22px;
+   border-radius: 25px;
+   color: #F0F0F0;
+   margin-bottom: 20px ;
+   border: none;
+   cursor: pointer;
+    }
+
+    .button1:active{
+        transform: scale(0.98);
+    }
+
+    .button2:active{
+        transform: scale(0.98);
+    }
+
+    .button3:active{
+        transform: scale(0.98);
+    }
+
+    .button4:active{
+        transform: scale(0.98);
+    }
+
+    .button5:active{
+        transform: scale(0.98);
+    }
+
+}
+
+
+.container4{
+    min-height: 800px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #F0F0F0;
+    padding-top: 109px;
+   
+}
+
+.card-booking{
+    text-align: center;
+    background-color: #FFFFFF;
+    height: 581px;
+    width: 1240px;
+    border-radius: 60px;
+    padding-top: 119px;
+    font-size: 24px;
+    
+    
+
+
+}
+
+.text2{
+    padding-top: 10px;
+
+}
+
+.text3 {
+    padding-top: 20px;
+    color: #747474;
+    font-size: 20px;
+    
+    
+    
+}
+
+.button-booking{
+    display: flex;
+    justify-content: center ;
+    
+}
+
+@scope (.card-booking){
+    
+    .button{
+        background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+        border: none;
+        transition-duration: 0.2s;
+        padding: 22px 29px 22px 29px;
+        border-radius: 27px;
+        align-items: center;
+        font-size: 24px;
+        color: #F0F0F0;
+        margin-top: 73px;
+        
+        
+    }
+
+    .button:hover{
+         background: linear-gradient(135deg, #FF7B4E 0%, #253a20 100%);
+        border: none;
+        transition-duration: 0.2s;
+        padding: 22px 29px 22px 29px;
+        border-radius: 27px;
+        align-items: center;
+        font-size: 24px;
+        color: #F0F0F0;
+        margin-top: 73px;
+        
+        
+    }
+
+    .button:active{
+        transform: scale(0.98);
+    }
+
+
+}
+
+
+
+
+
+.container5{
+    
+    padding-top: 60px;
+    min-height: 800px;
+    height: auto;
+    background-color: #D8D8D8; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+@scope (.text-form){
+    .text1{
+        display: flex;
+        justify-content: center;
+    }
+
+    .text2{
+        display: flex;
+        justify-content: center;
+    }
+
+    font-size: 30px;
+}
+
+
+.forms{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;  
+    align-items: center; 
+    padding-top: 100px;
+    background-color: #FFFFFF;
+    border-radius: 28px;
+    padding: 40px 135px 40px 135px;
+    max-width: 550px;
+    margin-top: 75px;
+            
+            
+    
+    
+}
+
+.form__item{
+    margin-bottom: 20px;
+   
+    
+    
+}
+
+
+
+.form__btn{
+   
+    
+    color: aliceblue;
+    transition-duration: 0.5s;
+    background: linear-gradient(135deg, #FF7B4E 0%, #FF584E 100%);
+        border: none;
+        border-radius: 30px;
+        padding: 20px 30px 20px 30px;
+        font-size: 20px;
+        
+
+    
+}
+
+.form__field{
+    text-align: center;
+    height: 50px;
+    width: 300px;
+    border-radius: 20px;
+    border-color: #FF584E  ;
+    border-width: 2px;
+}
+
+
+
+.form__btn:hover{
+   
+    
+    color: aliceblue;
+    background: black;
+    transition-duration: 0.5s;
+        border: none;
+        border-radius: 30px;
+        padding: 20px 30px 20px 30px;
+        font-size: 20px;
+        
+
+    
+}
+
+.form__btn:active{
+   
+   
+    transform: scale(0.98);
+
+    
+}
+
+
+.form__field:user-valid {
+    background-color: rgb(142, 223, 131);
+}
+
+.form__field:user-invalid {
+    background-color: rgb(240, 175, 175);
+}
+
+
+@scope (.container6){
+    
+
+    display: flex;  
+    justify-content: center;        
+    align-items: center;     
+    gap: 70px; 
+
+    .menu {
+    padding-left: 390px;
+    display: flex;           
+    align-items: center;     
+    gap: 64px;  
+    justify-content: center; 
+    font-size: 15px;
+
+}
+}
+
+.footer {
+    justify-content: center;
+    display: flex;
+    background-color: #F0F0F0;
+    padding: 10px 100px;
+    
+}
+
+.section1 .container1 {
+    background-image: url(img/picture\ main.png);
+    background-size: cover;
+    background-position: center;
+}
+
+.burger-menu {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .burger-menu {
+        display: block;
+    }
+}
+
+
+
+
+
+@media (max-width: 1400px) {
+    .container, .container1, .container2, .container3, .container4, .container5 {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .cards {
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+    }
+    .card2, .card3 {
+        margin-left: 0;
+    }
+    .menu {
+        padding-left: 30px;
+        gap: 30px;
+    }
+    .button {
+        padding-left: 30px;
+    }
+}
+
+@media (max-width: 992px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .menu {
+        padding-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    
+    .container1 {
+        background-position: center;
+        background-size: cover;
+        height: auto;
+        min-height: 600px;
+    }
+    .elements h1, .title h1 {
+        font-size: 32px;
+        padding-top: 10px;
+    }
+    .title {
+        padding-left: 20px;
+        padding-top: 80px;
+    }
+    .title1 {
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    .title1 h3 {
+        font-size: 18px;
+    }
+    .buttons {
+        padding-left: 20px;
+        padding-top: 40px;
+    }
+    
+   
+    .container3 {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding-bottom: 50px;
+        padding-top: 50px;
+    }
+
+    
+
+    .picture {
+        padding-top: 40px;
+        padding-right: 0;
+        text-align: center;
+    }
+    .picture img {
+        
+        height: auto;
+        display: flex;
+        justify-content: center;
+    }
+    .container3 h2 {
+        position: static;
+        text-align: center;
+        padding-left: 0;
+        font-size: 48px;
+        margin-top: 20px;
+    }
+    .list-button {
+        padding-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+    
+    
+    .button1, .button2, .button3, .button4, .button5 {
+        font-size: 22px;
+        white-space: normal;
+        width: 90%;
+        max-width: 400px;
+        text-align: left;
+        padding: 15px 20px;
+        margin: 0 auto 15px auto;
+        display: block;
+    }
+    
+    
+    .card-booking {
+        width: 90%;
+        padding: 60px 20px;
+        height: auto;
+        margin: 0 auto;
+    }
+    .card-booking .text1 h2, 
+    .card-booking .text2 h2 {
+        font-size: 28px;
+    }
+    .text3 h3 {
+        font-size: 18px;
+    }
+
+   
+
+    
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 10px 15px;
+    }
+    .button {
+        padding-left: 0;
+    }
+    
+    /* Форма */
+    .forms {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 90%;
+        padding: 30px 20px;
+    }
+    .form__field {
+        width: 100%;
+        min-width: 200px;
+    }
+    .form__btn {
+        width: 100%;
+        padding: 15px 20px;
+        font-size: 18px;
+    }
+    
+    
+    .cards {
+        gap: 20px;
+        justify-content: center;
+    }
+    .card1, .card2, .card3 {
+        margin-left: 0;
+        text-align: center;
+    }
+    .cards img {
+        width: 280px;
+        height: auto;
+    }
+    .cards h2 {
+        font-size: 24px;
+        padding-left: 0;
+        position: static;
+        margin-top: 10px;
+    }
+    
+   
+    .container2 .button1 .button {
+        padding: 15px 30px;
+        font-size: 20px;
+    }
+    
+   
+    .container6 .menu {
+        padding-left: 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .title, .title1, .buttons {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .elements h1 {
+        font-size: 24px;
+    }
+    .title1 h3 {
+        font-size: 16px;
+    }
+    .buttons .button {
+        font-size: 18px;
+        padding: 15px 20px;
+    }
+    
+   
+    .button1, .button2, .button3, .button4, .button5 {
+        font-size: 16px;
+        padding: 12px 15px;
+        width: 95%;
+    }
+    
+   
+    .cards img {
+        width: 240px;
+        height: auto;
+    }
+    .cards h2 {
+        font-size: 20px;
+    }
+    
+   
+    .text-form .text1 h2 {
+        font-size: 24px;
+    }
+    .text-form .text2 h3 {
+        font-size: 18px;
+    }
+    .form__field {
+        width: 100%;
+        font-size: 14px;
+    }
+    .form__btn {
+        font-size: 16px;
+        padding: 12px 20px;
+    }
+    
+    
+    .card-booking .text1 h2,
+    .card-booking .text2 h2 {
+        font-size: 22px;
+    }
+    .text3 h3 {
+        font-size: 16px;
+    }
+    .button-booking .button {
+        font-size: 18px;
+        padding: 12px 25px;
+        margin-top: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    .elements h1 {
+        font-size: 20px;
+    }
+    .title1 h3 {
+        font-size: 14px;
+    }
+    .container1 {
+        min-height: 500px;
+    }
+}
+
+@media (max-width: 320px) {
+    .logo img {
+        width: 60px;
+    }
+    .logo a {
+        display: inline-block;
+    }
+    .form__field {
+        width: 100%;
+        min-width: 180px;
+    }
+    .elements h1 {
+        font-size: 18px;
+    }
+    .buttons .button {
+        font-size: 16px;
+        padding: 12px 18px;
+    }
+}
